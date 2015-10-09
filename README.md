@@ -1,5 +1,5 @@
-android_device_acer_s56 (mt6752)
+android_device_zte_run4g (mt6732)
 
-Acer Liquid Jade S (S56) device folder
+ZTE RUN 4G (based on BladeV2Lite) device folder
 
 For creating CWM recovery, TWRP and CTR recovery.

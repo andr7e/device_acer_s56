@@ -12,18 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/acer/s56
+LOCAL_PATH := device/zte/run4g
 
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/acer/s56/BoardConfigVendor.mk
+-include vendor/zte/run4g/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := S56
+TARGET_BOOTLOADER_BOARD_NAME := P632T31
 TARGET_OTA_ASSERT_DEVICE :=
 
-BOARD_HAS_FLIPPED_SCREEN := true
+BOARD_HAS_FLIPPED_SCREEN := false
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6752
@@ -49,14 +49,14 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-TARGET_BOOTLOADER_BOARD_NAME := S56
+TARGET_BOOTLOADER_BOARD_NAME := P632T31
 
 WITH_DEXPREOPT := true
 
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1
 BOARD_KERNEL_BASE = 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --base 0x40000000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board zjgy01.14211300 --cmdline bootopt=64S3,32S1,32S1
+BOARD_MKBOOTIMG_ARGS := --base 0x40000000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board P632T31V1.0.0B05 --cmdline bootopt=64S3,32S1,32S1
 
 # Partition sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
@@ -95,13 +95,13 @@ USE_OPENGL_RENDERER := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 TARGET_DISABLE_TRIPLE_BUFFERING := false
-BOARD_CUSTOM_GRAPHICS := ../../../device/acer/s56/recovery/graphics.cwm.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/zte/run4g/recovery/graphics.cwm.c
 
 #TWRP
 #RECOVERY_VARIANT := twrp
 #TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/recovery.twrp.rc
 #TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.twrp.fstab
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/acer/s56/recovery/graphics.twrp.c
+TW_BOARD_CUSTOM_GRAPHICS := ../../../device/zte/run4g/recovery/graphics.twrp.c
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/battery
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp

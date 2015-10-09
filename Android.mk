@@ -22,6 +22,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),s56)
+ifeq ($(TARGET_DEVICE),run4g)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

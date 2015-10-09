@@ -16,7 +16,7 @@
 $(call inherit-product, device/acer/s56/device_s56.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-PRODUCT_NAME := full_s56
-PRODUCT_DEVICE := s56
-PRODUCT_BRAND := Acer
-PRODUCT_MODEL := Jade-S
+PRODUCT_NAME := full_run4g
+PRODUCT_DEVICE := run4g
+PRODUCT_BRAND := ZTE
+PRODUCT_MODEL := RUN 4G
